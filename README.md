@@ -1,4 +1,5 @@
-# IDS_789_Final_Project
+# Portfolio Optimization - IDS 789 Final Project
+Adil Gazder, Chris Moreira, Danish Maknojia, Vishesh Gupta
 
 ## Overview
 
@@ -28,15 +29,19 @@ This project focuses on developing an investment portfolio optimization algorith
    - We are currently selecting weights that meet constraints but do not optimize for the lowest beta value. This may lead to suboptimal portfolio performance.
 
 2. **Excessive Stock Weights**
-   - Some stocks occupy more than 7% of the portfolio, exceeding acceptable limits. This requires further restriction to ensure diversification.
+   - Some stocks occupy more than 7% of the portfolio, exceeding acceptable limits. This requires further restrictions to ensure diversification.
 
 3. **Industry Allocation Threshold Exceeded**
    - Weight rebalancing occasionally exceeds the 16% threshold for individual industries, violating the allocation constraints. Adjustments are necessary to maintain compliance.
 
-## Next Steps
-- Implement an optimization algorithm to minimize the portfolio beta while adhering to constraints.
-- Introduce stricter checks and balances to restrict individual stock weights to a maximum of 7%.
-- Refine the rebalancing process to enforce industry allocation limits more rigorously.
+## Updated Algorithm
+- 15,000 iterations to generate portfolios and select the one with the lowest beta and highest returns
+- Stock Weightage cap (<=4.5% of total portfolio) implemented
+- Sector Weightage cap (<=16% of total portfolio) implemented
 
-## Updated Algorithm 
+## Results
+
+We compared the performance of the portfolio to the SPY over the YTD 2024 time period and saw that our portfolio (44% overall returns) out-performed the SPY (26% overall returns) with a mean monthly return (calculated MoM) as 4% and a standard deviation of 4.6%
+
+![](YTDportperformance.png)
 
